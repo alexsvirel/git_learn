@@ -31,24 +31,28 @@ class Car():
         else:
             print("Нельзя уменьшать значение пробега")
 
-my_new_car = Car('audi', 'a4', 2016)
-print(my_new_car.get_descriptive_name())
-my_new_car.read_odometer()
+    def fill_gas_tank(self, liters):
+        """ Показывает сколько бензина в баке """
+        print("В баке " + self.make.title() + " есть " + str(liters) + " литров бензина")
 
-print("Установим пробег в 23 км:")
-# Изменение атрибута прямое (лучше не применять)
-my_new_car.odometer_reading = 23
-my_new_car.read_odometer()
-# Изменение атрибута через функцию замены
-print("Попытка установить пробег 20 км (меньше чем был):")
-my_new_car.updete_odometer(20)
-my_new_car.read_odometer()
-print("Установим пробег в 200 км:")
-my_new_car.updete_odometer(200)
-my_new_car.read_odometer()
-print("Увеличим пробег на -100 км:")
-my_new_car.increment_odometer(-100)
-my_new_car.read_odometer()
-print("Увеличим пробег на 100 км:")
-my_new_car.increment_odometer(100)
-my_new_car.read_odometer()
+# my_new_car = Car('audi', 'a4', 2016)
+# print(my_new_car.get_descriptive_name())
+# my_new_car.read_odometer()
+#
+# print("Установим пробег в 23 км:")
+# # Изменение атрибута прямое (лучше не применять)
+# my_new_car.odometer_reading = 23
+# my_new_car.read_odometer()
+# # Изменение атрибута через функцию замены
+# print("Попытка установить пробег 20 км (меньше чем был):")
+# my_new_car.updete_odometer(20)
+# my_new_car.read_odometer()
+# print("Установим пробег в 200 км:")
+# my_new_car.updete_odometer(200)
+# my_new_car.read_odometer()
+# print("Увеличим пробег на -100 км:")
+# my_new_car.increment_odometer(-100)
+# my_new_car.read_odometer()
+# print("Увеличим пробег на 100 км:")
+# my_new_car.increment_odometer(100)
+# my_new_car.read_odometer()
